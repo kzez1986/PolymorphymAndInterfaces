@@ -21,6 +21,7 @@ namespace Polimorfizm
             Circle c1 = new Circle(10);
 
             IPointy[] pointyObjects = { new Hexagon(10), new Square(10) };
+            //zmiana
 
             Shape[] shapes = { new Square(3), new Circle(10), new Hexagon(3), new Circle(5), new ThreeDCircle(12) };
             foreach(Shape s in shapes)
