@@ -21,7 +21,10 @@ namespace Polimorfizm
             Circle c1 = new Circle(10);
 
             IPointy[] pointyObjects = { new Hexagon(10), new Square(10) };
-            //zmiana
+            foreach(IPointy pointyObj in pointyObjects)
+            {
+                Console.WriteLine("Object {0} has: {1} elements", pointyObj.GetType().Name, pointyObj.Points);
+            }
 
             Shape[] shapes = { new Square(3), new Circle(10), new Hexagon(3), new Circle(5), new ThreeDCircle(12) };
             foreach(Shape s in shapes)
