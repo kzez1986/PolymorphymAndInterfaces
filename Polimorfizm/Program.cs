@@ -204,6 +204,11 @@ namespace Polimorfizm
 
     }
 
+    class PointyClassTEst : IPointy
+    {
+        public byte Points => throw new NotImplementedException();
+    }
+
     [Serializable]
     public class ShapeException : Exception
     {
